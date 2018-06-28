@@ -12,10 +12,10 @@ public class Main {
        // char[] charArray = input.toCharArray();
       //  URLify.replaseSpaces(charArray, 13);
 
-        System.out.println( OneAway.oneAway("sale", "pale"));
+       /* System.out.println( OneAway.oneAway("sale", "pale"));
         System.out.println( OneAway.oneAway("paless", "pale"));
         System.out.println( OneAway.oneAway("pale", "bale"));
-        System.out.println( OneAway.oneAway("pale", "palee"));
+        System.out.println( OneAway.oneAway("pale", "palee")); */
 
        /* System.out.println(IsUnique.isUniqueHashSet(input));
         System.out.println( IsUnique.isUniqueLoop(input));
@@ -30,7 +30,7 @@ public class Main {
         System.out.println(CheckPermutation.isPermutationUsingArray(s1, s2)); */
 
 
-
+        System.out.println(StringCompression.StringCompressor("aabbcccccaaa"));
 
 
 

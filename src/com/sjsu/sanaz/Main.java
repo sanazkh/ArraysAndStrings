@@ -30,7 +30,10 @@ public class Main {
         System.out.println(CheckPermutation.isPermutationUsingArray(s1, s2)); */
 
 
-        System.out.println(StringCompression.StringCompressor("aabbcccccaaa"));
+      //  System.out.println(StringCompression.StringCompressor("aabbcccccaaa"));
+
+        StringRotation sr = new StringRotation();
+        System.out.println(sr.isRotation("ahnadinejad", "jadahnadine"));
 
 
 

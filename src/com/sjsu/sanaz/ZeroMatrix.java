@@ -19,13 +19,13 @@ public class ZeroMatrix {
         }
 
 
-        for (int i = 0; i < myMatrix.length; i++) {
+        for (int i = 0; i < row.length; i++) {
             if (row[i]) {
                 nullifyRow(myMatrix, i);
             }
         }
 
-        for (int j = 0; j < myMatrix.length; j++) {
+        for (int j = 0; j < column.length; j++) {
             if (column[j]) {
                 nullifyColumn(myMatrix, j);
             }

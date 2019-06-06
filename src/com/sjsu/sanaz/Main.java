@@ -1,5 +1,7 @@
 package com.sjsu.sanaz;
 
+import com.sun.tools.doclets.formats.html.SourceToHTMLConverter;
+
 import java.util.Scanner;
 
 public class Main {
@@ -32,10 +34,10 @@ public class Main {
 
       //  System.out.println(StringCompression.StringCompressor("aabbcccccaaa"));
 
-        StringRotation sr = new StringRotation();
-        System.out.println(sr.isRotation("ahnadinejad", "jadahnadine"));
+      //  StringRotation sr = new StringRotation();
+      //  System.out.println(sr.isRotation("ahnadinejad", "jadahnadine"));
 
-
+       // System.out.println(IsUnique.isUniqueOpt("dsdgdfh"));
 
 
     }

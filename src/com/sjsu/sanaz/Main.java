@@ -1,6 +1,5 @@
 package com.sjsu.sanaz;
 
-import com.sun.tools.doclets.formats.html.SourceToHTMLConverter;
 
 import java.util.Scanner;
 
@@ -27,9 +26,9 @@ public class Main {
         s1 = scan1.next();
         String s2 = "";
         s2 = scan1.next();
-        System.out.println(CheckPermutation.isPermutationUsingHashTable(s1, s2));
+        System.out.println(CheckPermutation.isPermutationUsingHashTable(s1, s2)); */
 
-        System.out.println(CheckPermutation.isPermutationUsingArray(s1, s2)); */
+    //   System.out.println(CheckPermutation.isPermutationUsingArray("sanaz", "saoaz"));
 
 
       //  System.out.println(StringCompression.StringCompressor("aabbcccccaaa"));
@@ -39,6 +38,14 @@ public class Main {
 
        // System.out.println(IsUnique.isUniqueOpt("dsdgdfh"));
 
+    //    System.out.println(URLify.urlify("Mr John Smith   ", 13));
+    //    System.out.println(URLify.urlify(new char[]{'M', 'r', ' ', 'j', 'o', 'h', 'n', ' ', 's'}, 9));
+    //    URLify.replaceSpaces(new char[]{'M', 'r', ' ', 'j', 'o', 'h', 'n', ' ', 's'}, 9);
+
+     //   System.out.println(ReverseString.reverse("hEllo"));
+
+     //   System.out.println(OneAway.oneWayStrings("pale", "ale"));
+     //   System.out.println(StringCompression.compressor("aaaaafgfddssdsdssssss"));
 
     }
 }

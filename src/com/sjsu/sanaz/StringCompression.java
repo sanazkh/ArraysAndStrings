@@ -7,6 +7,27 @@ import java.util.ArrayList;
  */
 public class StringCompression {
 
+    public static String compressor(String a){
+        StringBuilder sb = new StringBuilder();
+        int tracker = 1;
+        for(int i = 0; i < a.length(); i++){
+            char current = a.charAt(i);
+            if( i + 1 < a.length() && current == a.charAt(i+1)){
+                tracker++;
+            }else{
+                sb.append(current);
+                sb.append(tracker);
+                tracker = 1;
+            }
+        }
+        String res = sb.toString();
+        if(res.length() < a.length()){
+            return res;
+        }else{
+            return a;
+        }
+    }
+
     public static String StringCompressor(String input){
 
 

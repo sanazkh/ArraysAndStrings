@@ -1,11 +1,37 @@
 package com.sjsu.sanaz;
 
+import java.util.HashMap;
 import java.util.Hashtable;
 
 /**
  * Created by sanazk on 6/23/18.
  */
 public class OneAway {
+
+    public static boolean oneWayStrings(String a, String b){
+        int aLeng = a.length();
+        int bLeng = b.length();
+        int deltaLeng = Math.abs(aLeng - bLeng);
+        if(deltaLeng > 1){
+            return false;
+        }
+        if(deltaLeng == 0 && a.equals(b)){
+            return true;
+        }
+        HashMap<Character, Integer> map = new HashMap<>();
+        for(int i = 0; i <aLeng; i++){
+            map.put(a.charAt(i), map.getOrDefault(a.charAt(i), 0)+1);
+        }
+        int diffTracker = 0;
+        for(int i = 0; i < bLeng; i++){
+            if(map.get(b.charAt(i)) != null &&  map.get(b.charAt(i)) > 0){
+                map.put(b.charAt(i), map.getOrDefault(b.charAt(i), 0)-1);
+            }else{
+                diffTracker++;
+            }
+        }
+        return diffTracker <= 1;
+    }
 
     public static boolean oneAway(String s1, String s2){
         int a = s1.length();
